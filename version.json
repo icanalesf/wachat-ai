@@ -1,6 +1,6 @@
 {
-  "versionCode": 18,
-  "versionName": "1.13.0",
-  "apkUrl": "https://github.com/icanalesf/wachat-ai/releases/download/v1.13.0/WAchat-AI-debug-v1.13.0.apk",
-  "notes": "Actualizador automático integrado: la app avisa de nuevas versiones y se actualiza con un toque."
+  "versionCode": 20,
+  "versionName": "1.15.0",
+  "apkUrl": "https://github.com/icanalesf/wachat-ai/releases/download/v1.15.0/WAchat-AI-debug-v1.15.0.apk",
+  "notes": "Elegir destinatarios desde conversaciones · El bot recuerda y usa los datos del contacto registrado · Mensaje final del registro opcional · Memoria de conversación ajustable (hasta 15 días)"
 }
