@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidad — WAchat AI</title>
+<style>
+  body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:820px;
+       margin:40px auto;padding:0 20px;color:#1a1a1a;line-height:1.6}
+  h1{font-size:1.8rem} h2{font-size:1.25rem;margin-top:1.8em;border-bottom:1px solid #eee;padding-bottom:.3em}
+  h3{font-size:1.05rem;margin-top:1.2em} a{color:#1565c0}
+  code{background:#f4f4f4;padding:1px 5px;border-radius:4px;font-size:.9em}
+  .meta{color:#666;font-size:.9rem}
+</style>
+</head>
+<body>
+<h1>Política de Privacidad — WAchat AI</h1>
+<p class="meta"><strong>Última actualización:</strong> 6 de junio de 2026 ·
+<strong>Responsable:</strong> Abraham Canales · Contacto:
+<a href="mailto:isra.canales@gmail.com">isra.canales@gmail.com</a></p>
+
+<p>WAchat AI ("la app") es una aplicación de Android que responde automáticamente, con
+inteligencia artificial, los mensajes entrantes de WhatsApp Messenger y WhatsApp Business
+instalados en el mismo teléfono. Esta política explica qué datos trata la app, con qué
+finalidad y con quién se comparten.</p>
+
+<h2>1. Qué datos trata la app y por qué</h2>
+
+<h3>a) Contenido de notificaciones (Acceso a notificaciones)</h3>
+<p>La app usa el permiso de <strong>Servicio de escucha de notificaciones</strong>
+(<code>BIND_NOTIFICATION_LISTENER_SERVICE</code>) para detectar mensajes entrantes.</p>
+<ul>
+<li><strong>Solo</strong> procesa las notificaciones de los paquetes que actives (WhatsApp
+<code>com.whatsapp</code> y/o WhatsApp Business <code>com.whatsapp.w4b</code>). El resto de
+notificaciones se <strong>descartan en memoria</strong> y no se guardan.</li>
+<li>De cada notificación se extrae el nombre del chat/contacto y el texto del mensaje, con el
+único fin de generar y enviar una respuesta automática.</li>
+</ul>
+
+<h3>b) Envío del texto del mensaje a OpenAI</h3>
+<p>Para generar la respuesta, el <strong>texto del mensaje entrante</strong> (y un contexto
+breve de la conversación) se envía a la <strong>API de OpenAI</strong>, usando la clave de API
+que tú configuras. El hilo puede conservarse en los servidores de OpenAI hasta ~30 días para
+dar continuidad a la charla. Política de OpenAI:
+<a href="https://openai.com/policies/privacy-policy">openai.com/policies/privacy-policy</a>.</p>
+
+<h3>c) Contactos (opcional)</h3>
+<p>Si activas la acción "agendar contacto", la app usa los permisos de <strong>Contactos</strong>
+(<code>READ_CONTACTS</code>, <code>WRITE_CONTACTS</code>) para crear el contacto en tu agenda y
+evitar duplicados. Si no concedes el permiso, la función se omite.</p>
+
+<h3>d) Datos de registro de la app</h3>
+<p>Al usar la app por primera vez introduces tu <strong>nombre, número de WhatsApp y email</strong>.
+Se guardan <strong>cifrados en tu dispositivo</strong> y se envían una vez al desarrollador (vía
+un webhook de Make/Integromat) para llevar control de instalaciones y de la licencia.</p>
+
+<h3>e) Leads de los flujos de registro (opcional)</h3>
+<p>Si configuras un "flujo de registro por palabra clave", los datos que el contacto escriba se
+guardan localmente y, <strong>si configuras una URL de webhook</strong>, se envían a ese webhook
+(servicio externo que tú eliges). Tú eres responsable del destino que configures.</p>
+
+<h3>f) Clave de API de OpenAI</h3>
+<p>Tu clave de API se almacena <strong>cifrada</strong> mediante Android Keystore. Nunca se
+muestra completa ni se registra en logs.</p>
+
+<h2>2. Dónde se guardan los datos</h2>
+<p>La conversación, los registros y la configuración se guardan <strong>localmente</strong> en tu
+dispositivo. Los únicos envíos a terceros son: (1) el texto del mensaje a <strong>OpenAI</strong>,
+(2) tus datos de registro al <strong>desarrollador</strong>, y (3) los leads al <strong>webhook</strong>
+que tú configures.</p>
+
+<h2>3. Con quién se comparten</h2>
+<ul>
+<li><strong>OpenAI</strong> — procesamiento de IA del texto del mensaje.</li>
+<li><strong>Desarrollador de la app</strong> — datos de registro (control de instalaciones/licencia).</li>
+<li><strong>El webhook que tú configures</strong> — leads de registro, si lo activas.</li>
+</ul>
+<p>No vendemos tus datos ni los compartimos con terceros distintos de los anteriores.</p>
+
+<h2>4. Tus derechos y control</h2>
+<ul>
+<li>Puedes <strong>borrar el historial</strong> o <strong>borrar todos los datos</strong> desde la
+pantalla de Privacidad de la app en cualquier momento.</li>
+<li>Puedes desactivar el acceso a notificaciones desde los Ajustes de Android.</li>
+<li>Desinstalar la app elimina todos los datos locales.</li>
+<li>Solicitudes sobre tus datos: <a href="mailto:isra.canales@gmail.com">isra.canales@gmail.com</a></li>
+</ul>
+
+<h2>5. Menores</h2>
+<p>La app está destinada a uso profesional/empresarial y no está dirigida a menores de edad.</p>
+
+<h2>6. Cambios en esta política</h2>
+<p>Podemos actualizar esta política. La fecha de "Última actualización" indica la versión vigente.</p>
+
+<h2>7. Contacto</h2>
+<p>Abraham Canales — <a href="mailto:isra.canales@gmail.com">isra.canales@gmail.com</a></p>
+</body>
+</html>
